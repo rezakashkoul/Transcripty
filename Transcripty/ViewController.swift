@@ -63,7 +63,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     }
     
     func createRecordButton() {
-        recordButton.backgroundColor = .blue
+        recordButton.backgroundColor = .link
         recordButton.setTitle("Record", for: .normal)
         recordButton.addTarget(self, action: #selector(recordActionButton), for: .touchUpInside)
         self.view.addSubview(recordButton)
@@ -77,7 +77,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     }
     
     func createPlayButton() {
-        playButton.backgroundColor = .blue
+        playButton.backgroundColor = .link
         playButton.setTitle("Play", for: .normal)
         playButton.addTarget(self, action: #selector(playActionButton), for: .touchUpInside)
         self.view.addSubview(playButton)
